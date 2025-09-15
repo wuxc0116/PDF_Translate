@@ -20,12 +20,15 @@ pip install flask deep-translator pymupdf pytesseract pillow
 
 System Tesseract (required for OCR)
 macOS (brew)
+
 brew install tesseract
 
 Ubuntu / Debian
+
 sudo apt-get update && sudo apt-get install -y tesseract-ocr
 
 Windows (choco; or download the Tesseract installer and add it to PATH)
+
 choco install tesseract
 
 
@@ -36,3 +39,4 @@ curl -X POST http://localhost:5000/translate \
   -F "file=@/path/to/your.pdf" \
 
   -H "Accept: text/plain"
+
